@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Electone Web</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-wrapper">
+      <div class="logo-wrapper">
+        <a href="index.html"></a>
+        <img src="./img/logo.jpg" alt="electone logo" class="logo">
+      </div>
+    </div>
+  </header>
+  <div class="row">
+    <div class="col-md-2">
+      <div class="menus">
+        <ul>
+          <li class="menu active">Home<a href="#"></a></li>
+          <li class="menu">Products<a href="./products.html"></a></li>
+          <li class="menu">Links<a href="./links.html"></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-10">
+
+      <div class="top-img">
+        MAKE MUSIC, MAKE FUN.
+      </div>
+      <h2 class="pt-4">ヤマハエレクトーンは2019年に60周年を迎えました！</h2>
+
+      <p class="pt-4 ">音で心をふるわせる。そんな瞬間を全身で生み出し、感じる。その感動を仲間と分かち合う。<br>
+        音楽の楽しさを無限に。自分の可能性を無限に。</p>
+
+      <div class="row">
+        <div class="col-md-5">
+          <h2 class="play-header">
+            Full Body Music -全身で音楽を楽しむ-
+          </h2>
+          <p class="pt-2">
+            好きな音楽を全身でコントロールする。これがエレクトーンの醍醐味です。エレクトーンは上鍵盤、下鍵盤、ペダル鍵盤という3つの鍵盤それぞれに、自分の想いを込めることができます。多彩かつリアルなサウンドとリズム。様々な組み合わせで、どんなジャンルの音楽も好きなように、本格的に奏でられます。
+          </p>
+        </div>
+        <div class="col-md-7"><img src="./img/playing1.jpg" alt="playing" class="play-img"></div>
+      </div>
+
+      <p class="encourage">さぁ、一緒に楽しもう</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy;Copyright2020 Coding School. All Rights. Reserved.
+  </footer>
+
+  <!-- jQuery、Popper.js、Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script>
+    // menu
+    $(function () {
+      $('.menu').hover(function () {
+        // menu has 'active'?
+        // when hoverd
+        $(this).css('background-color', '#000000').css('color', '#ffffff');
+      }, function () {
+        // when not hoverd
+        $(this).css('background-color', '#ffffff').css('color', '#000000');
+      });
+    })
+
+    $(function () {
+      $('.active').hover(function () {
+
+      }, function () {
+        $(this).css('background-color', '#000000').css('color', '#ffffff');
+      })
+    })
+  </script>
+</body>
+
+</html>
